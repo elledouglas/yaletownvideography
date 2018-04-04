@@ -1,0 +1,285 @@
+/*body {
+  --container-bg-color: #333;
+  --left-bg-color: pink;
+  --left-button-hover-color: rgba(161, 11, 11, 0.3);
+
+  --right-button-hover-color: rgba(92, 92, 92, 0.3);
+
+  --speed: 1000ms;
+}*/
+
+html, body {
+  padding:0;
+  margin:0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+ #header {
+
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    border-radius:15px;
+    display:block;
+    position:relative;
+    height:120px;
+}
+#header h1 {
+
+font-size: 100px;
+animation: type 3s steps(19);
+overflow: hidden;
+white-space: nowrap;
+border-right: 4px solid black;
+width: 100%;
+padding-left: 20%;
+color: black;
+font-size: 20px;
+
+}
+
+@keyframes type {
+  0% {
+  width:0ch;
+}
+100% {
+width:19ch;
+}
+}
+
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  height: 2.5rem;
+  padding-top: 1.3rem;
+  width: 15rem;
+  text-align: center;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateX(-50%);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--container-bg-color);
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left:0;
+  background-size: cover;
+  background: url('desk.jpeg') center center no-repeat;
+
+}
+
+#video {
+background: url("https://vimeo.com/104869649")
+}*/
+
+.split.left:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: pink;
+  background: url('desk.jpeg') center center no-repeat;
+
+}*/
+
+.split.right {
+  right:0;
+  background: url('desk.jpeg') center center no-repeat;
+  background-size: cover;
+
+}
+.split.right h1{
+color: red;
+font-family: 'Libre Barcode 39 Text';
+}
+
+.split.right:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(44, 43, 43, 0.8);
+}
+
+@media(max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .button {
+    width: 12rem;
+  }
+}
+
+@media(max-height: 700px) {
+  .button {
+    top: 70%;
+  }
+}
+
+.color-overlay h1 {
+color: white;
+opacity: 1.2;
+width: 300px;
+border: 4px solid white;
+padding: 25px;
+margin: 25px;
+height: 200px;
+font-size: 22px;
+text-align: center;
+line-height: 50px;*/
+/*background:
+	linear-gradient( rgba(46, 185, 205, 4.45), rgba(46, 185, 201, 0.45))*/
+
+}
+/*---------------PORTFOLIO PAGE ------------*/
+.pimg1, .pimg2, .pimg3, .pimg4{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image: url('desk.jpeg');
+  min-height:50%;
+}
+
+.pimg2{
+  background-image:url('../img/image2.jpg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('../img/image3.jpg');
+  min-height:250px;
+}
+
+.pimg4{
+  background-image:url('../img/image3.jpg');
+  min-height:400px;
+}
+.section{
+  text-align:center;
+  padding:50px 80px;
+font-family: 'Cormorant Garamond', serif;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+
+
+}
+.section-dark p {
+width: 20%;
+float: left;
+padding-left: 10%;
+
+}
+
+
+.ptext{
+  position:absolute;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+  background-color:red;
+  color:#fff;
+
+}
+
+.one .two  p{
+width: 20%;
+float: left;
+display: inline-block;
+}
+
+.ptext {
+  background-color:transparent;
+  text-align: center;
+}
+.video {
+width: 100%;
+}
+img {
+width: 100%;
+padding-left: 0px;}
+
+.video li {
+float: left;
+padding-left: 35px;
+width: 25%;
+}
+
+.border {
+padding: 20px;
+font-family: 'Cormorant Garamond', serif;}
+
+#header h1 {
+    font-size: 50px;
+    animation: type 3s steps(19);
+    width: 50%;
+    padding-left: 20%;
+}
+
+@keyframes type
+0% {
+    width: 0ch;
+}
+100% {
+    width: 19ch;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
+p {
+  font-style: italic;
+  line-height: 1.5;
+}
